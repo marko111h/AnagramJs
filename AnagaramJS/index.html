@@ -1,41 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <link rel="stylesheet" href="style.css" />
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@1,100&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@1,100&display=swap"
+      rel="stylesheet"
+    />
     <title>Anagram</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="wrapper">
-        <header><h1>Anagram</h1></header>
-        <div class="anagram">
-            <form id="foruum" onsubmit="myFunction()">
-            <label>Prva Rec</label>
-            <input  type="text" id="prvaRec" size="20" value="" placeholder="Enter Text" required/>
-            
-            <label>Druga Rec</label>
-            <input type="text" id="drugaRec"  size="20" placeholder="Enter Text" required/>
+      <header><h1>Anagram</h1></header>
+      <div class="anagram">
+        <form id="foruum" onsubmit="myFunction()">
+          <label>Prva Rec</label>
+          <input
+            type="text"
+            id="prvaRec"
+            size="20"
+            value=""
+            placeholder="Enter Text"
+            required
+          />
 
-            <button>OK</button>
-            <!-- <input type="submit" value="Submit">
-        -->
-        </form>
+          <label>Druga Rec</label>
+          <input
+            type="text"
+            id="drugaRec"
+            size="20"
+            placeholder="Enter Text"
+            required
+          />
+
+          <button>OK</button>
+          <!-- <input type="submit" value="Submit">
+        --></form>
         <div class="prikazi">
-            <p id="prikaziPrvuRec"></p>
-            <p id="prikaziDruguRec"></p>
-            <h3 id="daLiJeAnagaram"></h3>
+          <p id="prikaziPrvuRec"></p>
+          <p id="prikaziDruguRec"></p>
+          <h3 id="daLiJeAnagaram"></h3>
         </div>
-        </div>
-        <footer><h2>Created by Marko</h2></footer>
+      </div>
+      <footer><h2>Created by Marko</h2></footer>
     </div>
     <script src="js.js"></script>
-</body>
-
+    <script src="library.js"></script>
+  </body>
 </html>

@@ -2,84 +2,80 @@
 Global styles
 */
 *,
-*,::before,
-*::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
+*,
+::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    font-family: "Convergence", sans-serif;
-    background-color: rgba(82, 185, 137, 0.8);
-    
-    
-    
-  }
-  /* 
+  font-family: 'Convergence', sans-serif;
+  background-color: rgba(82, 185, 137, 0.8);
+}
+/* 
 HTML elements
 */
 .wrapper {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    height: 100px;
-    width: 100%;
-    font-size: 16px;
-    font-family: 'Roboto Serif', sans-serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  height: 100px;
+  width: 100%;
+  font-size: 16px;
+  font-family: 'Roboto Serif', sans-serif;
 }
-.wrapper .anagram form input{
-    border: none;
-    
-    -webkit-appearance: none;
-    -ms-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background: #f2f2f2;
-    padding: 12px;
-    width: 250px;
-    outline: none;
+.wrapper .anagram form input {
+  border: none;
+
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #f2f2f2;
+  padding: 12px;
+  width: 250px;
+  outline: none;
 }
-.wrapper .anagram form input:focus::placeholder{
-    color: transparent;
+.wrapper .anagram form input:focus::placeholder {
+  color: transparent;
 }
 .wrapper .anagram form input::placeholder {
-    color: #222;
-    transition: color 0.3s ease;
+  color: #222;
+  transition: color 0.3s ease;
 }
-.anagram{
-    margin-top: 40px;
-    margin-bottom: 40px;
+.anagram {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
-.wrapper .anagram form button{
-    margin-left: 20px;
-    letter-spacing: 2px;
-    padding: 5px 10px 5px 10px;
-    width: 80px;
-    height: 40px;
-    border: none;
-    color: white;
-    background-color: rgb(36, 36, 148);
-    border-radius: 4px;
-    box-shadow: inset 0 0 0 0 #689cdf;
-    transition: ease-out 0.3s;
-    font-size: 18px;
-    outline: none;
+.wrapper .anagram form button {
+  margin-left: 20px;
+  letter-spacing: 2px;
+  padding: 5px 10px 5px 10px;
+  width: 80px;
+  height: 40px;
+  border: none;
+  color: white;
+  background-color: rgb(36, 36, 148);
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 0 #689cdf;
+  transition: ease-out 0.3s;
+  font-size: 18px;
+  outline: none;
 }
-.wrapper .anagram form button:hover{
-    box-shadow: inset 80px 0 0 0 #689cdf;
-        cursor: pointer;
+.wrapper .anagram form button:hover {
+  box-shadow: inset 80px 0 0 0 #689cdf;
+  cursor: pointer;
+}
 
-}
-
-.wrapper .anagram .prikazi h3{
-    position: absolute;
-    top: 0;
-    margin-top: 100px;
+.wrapper .anagram .prikazi h3 {
+  position: absolute;
+  top: 0;
+  margin-top: 100px;
 }
 .footer {
-    margin-top: 300px;
+  margin-top: 300px;
 }
