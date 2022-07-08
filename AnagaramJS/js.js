@@ -27,7 +27,5 @@ function myFunction() {
     })
     .catch((err) => {
       console.log("Error Reading data " + err);
-      document.getElementById("daLiJeAnagaram").innerHTML =
-        "Error reading data";
     });
 }
