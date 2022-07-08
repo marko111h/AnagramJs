@@ -1,12 +1,13 @@
 const form = document.getElementById("foruum");
 function handleForm(event) {
   event.preventDefault();
+  myFunction();
 }
 form.addEventListener("submit", handleForm);
 
 function myFunction() {
-  const firstWord = window.document.getElementById("prvaRec").value;
-  const secoundWord = window.document.getElementById("drugaRec").value;
+  const firstWord = document.getElementById("prvaRec").value;
+  const secoundWord = document.getElementById("drugaRec").value;
   const api_url = `http://localhost:20010/anagram/:${firstWord}/:${secoundWord}`;
 
   fetch(api_url, {
