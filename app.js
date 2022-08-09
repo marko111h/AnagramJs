@@ -1,30 +1,30 @@
-const express = require("express");
+const express = require('express');
 const app = express();
 const port = 20010;
-const cors = require("cors");
+const cors = require('cors');
 
-app.use(express.static("public"));
-app.use(express.json({ limit: "1mb" }));
+app.use(express.static('public'));
+app.use(express.json({ limit: '1mb' }));
 app.use(
   cors({
-    origin: "http://127.0.0.1:5500",
+    origin: 'http://127.0.0.1:5501',
   })
 );
 
-app.get("/", (req, res) => {
-  res.send("Hello World, from express");
+app.get('/', (req, res) => {
+  res.send('Hello World, from express');
 });
 
-app.get("/anagram/:value1/:value2", (req, res) => {
-  const one = req.params["value1"];
-  const two = req.params["value2"];
+app.get('/anagram/:value1/:value2', (req, res) => {
+  const one = req.params['value1'];
+  const two = req.params['value2'];
 
-  const x = one.toLowerCase().split("").sort().join("");
-  const y = two.toLowerCase().split("").sort().join("");
+  const x = one.toLowerCase().split('').sort().join('');
+  const y = two.toLowerCase().split('').sort().join('');
   if (x === y) {
-    return res.send("Anagram!!!!!");
+    return res.send('Anagram!!!!!');
   } else {
-    return res.send("nije Anagram!");
+    return res.send('nije Anagram!');
   }
 });
 
