@@ -8,7 +8,7 @@ form.addEventListener("submit", handleForm);
 function myFunction() {
   const firstWord = document.getElementById("prvaRec").value;
   const secoundWord = document.getElementById("drugaRec").value;
-  const api_url = `http://localhost:20010/anagram/:${firstWord}/:${secoundWord}`;
+  const api_url = `https://v-anagram.vercel.app/anagram/:${firstWord}/:${secoundWord}`;
 
   fetch(api_url, {
     method: "GET",
