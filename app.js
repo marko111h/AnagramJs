@@ -1,13 +1,13 @@
 const express = require('express');
 const app = express();
-const port = 20010;
+const port = process.env.PORT || 20010;
 const cors = require('cors');
 
 app.use(express.static('public'));
 app.use(express.json({ limit: '1mb' }));
 app.use(
   cors({
-    origin: '*',
+    origin: 'https://anagram-js.netlify.app/',
   })
 );
 
