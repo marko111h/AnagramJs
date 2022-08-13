@@ -8,7 +8,7 @@ app.use(express.json({ limit: '1mb' }));
 app.use(
   cors({
    // origin: 'https://anagram-js.netlify.app/',
-   origin: 'https://anagram-js.vercel.app/',
+   origin: '*',
   })
 );
 
